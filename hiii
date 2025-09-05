@@ -1,0 +1,101 @@
+local main = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local up = Instance.new("TextButton")
+local down = Instance.new("TextButton")
+local onof = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local plus = Instance.new("TextButton")
+local speed = Instance.new("TextLabel")
+local mine = Instance.new("TextButton")
+local closebutton = Instance.new("TextButton")
+local mini = Instance.new("TextButton")
+local mini2 = Instance.new("TextButton")
+
+main.Name = "main"
+main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+main.ResetOnSpawn = false
+
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.1, 0, 0.4, 0)
+Frame.Size = UDim2.new(0, 220, 0, 80)
+Frame.Active = true
+Frame.Draggable = true
+Frame.ClipsDescendants = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 0.3
+TextLabel.Position = UDim2.new(0, 0, 0, 0)
+TextLabel.Size = UDim2.new(1, 0, 0, 30)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "FLY GUI V3"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextWrapped = true
+
+onof.Parent = Frame
+onof.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+onof.Position = UDim2.new(0.55, 0, 0.35, 0)
+onof.Size = UDim2.new(0, 70, 0, 30)
+onof.Font = Enum.Font.GothamBold
+onof.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+up.Parent = Frame
+up.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
+up.Position = UDim2.new(0.05, 0, 0.35, 0)
+up.Size = UDim2.new(0, 50, 0, 30)
+up.Font = Enum.Font.Gotham
+up.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+down.Parent = Frame
+down.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+down.Position = UDim2.new(0.05, 0, 0.7, 0)
+down.Size = UDim2.new(0, 50, 0, 30)
+down.Font = Enum.Font.Gotham
+down.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+plus.Parent = Frame
+plus.BackgroundColor3 = Color3.fromRGB(100, 100, 255)
+plus.Position = UDim2.new(0.35, 0, 0.35, 0)
+plus.Size = UDim2.new(0, 50, 0, 30)
+plus.Font = Enum.Font.Gotham
+plus.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+mine.Parent = Frame
+mine.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+mine.Position = UDim2.new(0.35, 0, 0.7, 0)
+mine.Size = UDim2.new(0, 50, 0, 30)
+mine.Font = Enum.Font.Gotham
+mine.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+speed.Parent = Frame
+speed.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+speed.Position = UDim2.new(0.55, 0, 0.7, 0)
+speed.Size = UDim2.new(0, 70, 0, 30)
+speed.Font = Enum.Font.GothamBold
+speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+closebutton.Parent = Frame
+closebutton.Size = UDim2.new(0, 30, 0, 30)
+closebutton.Position = UDim2.new(1, -35, 0, 0)
+closebutton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+closebutton.Font = Enum.Font.GothamBold
+closebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+mini.Parent = Frame
+mini.Size = UDim2.new(0, 30, 0, 30)
+mini.Position = UDim2.new(1, -70, 0, 0)
+mini.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+mini.Font = Enum.Font.GothamBold
+mini.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+mini2.Parent = Frame
+mini2.Size = UDim2.new(0, 30, 0, 30)
+mini2.Position = UDim2.new(1, -70, 0, 0)
+mini2.BackgroundColor3 = Color3.fromRGB(100, 200, 100)
+mini2.Font = Enum.Font.GothamBold
+mini2.TextColor3 = Color3.fromRGB(255, 255, 255)
+mini2.Visible = false
